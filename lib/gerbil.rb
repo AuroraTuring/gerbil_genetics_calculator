@@ -4,7 +4,7 @@ class Gerbil
   def initialize(color, pattern, gender)
     @color = color
     @pattern = pattern
-    @gender = gender
+    @gender = gender # fixed, male or female
   end
 
 
