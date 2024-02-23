@@ -2,11 +2,11 @@ require "./spec/spec_helper"
 
 RSpec.describe Gerbil do
   before(:each) do
-    @gerbil1 = Gerbil.new("Agouti", "white belly", :male)
-    @gerbil2 = Gerbil.new("Lilac", "spot", :male)
-    @gerbil3 = Gerbil.new("Yellow Fox", "pied", :female)
-    @gerbil4 = Gerbil.new("Grey Agouti", "self", :female)
-    @gerbil5 = Gerbil.new("Black", "mottled", :female)
+    @gerbil1 = Gerbil.new("agouti", "base", :male)
+    @gerbil2 = Gerbil.new("lilac", "spot", :male)
+    @gerbil3 = Gerbil.new("yellow fox", "pied", :female)
+    @gerbil4 = Gerbil.new("grey agouti", "base", :male)
+    @gerbil5 = Gerbil.new("black", "mottled", :female)
   end
 
   describe "#initialize" do
@@ -15,15 +15,23 @@ RSpec.describe Gerbil do
     end
 
     it "has correct attributes" do
-      expect(@gerbil1.color).to eq("Agouti")
-      expect(@gerbil1.pattern).to eq("white belly")
+      expect(@gerbil1.color).to eq("agouti")
+      expect(@gerbil1.pattern).to eq("base")
       expect(@gerbil1.gender).to eq(:male)
     end
 
-    it "has incorrect attributes" do
-      expect(@gerbil1.color).to eq("Rainbow")
+    xit "has incorrect attributes" do
+      expect(@gerbil1.color).to eq("rainbow")
       expect(@gerbil1.pattern).to eq("blurry")
-      expect(@gerbil1.gender).to eq(:female)
+      expect(@gerbil1.gender).to eq(:plain)
+    end
+  end
+
+  describe ".valid_color?" do
+    it "has a valid color from the colors list" do
+      expect(Gerbil.valid_color?("black")).to be true
+      # typoed colors
+      # not on the list
     end
   end
 end
