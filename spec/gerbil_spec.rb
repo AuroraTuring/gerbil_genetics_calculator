@@ -30,8 +30,11 @@ RSpec.describe Gerbil do
   describe ".valid_color?" do
     it "has a valid color from the colors list" do
       expect(Gerbil.valid_color?("black")).to be true
-      # typoed colors
-      # not on the list
+      expect(Gerbil.valid_color?("aguuti")).to be false
+      expect(Gerbil.valid_color?("painted")).to be false
     end
+
   end
+
+
 end
