@@ -19,12 +19,6 @@ RSpec.describe Gerbil do
       expect(@gerbil1.pattern).to eq("base")
       expect(@gerbil1.gender).to eq(:male)
     end
-
-    xit "has incorrect attributes" do
-      expect(@gerbil1.color).to eq("rainbow")
-      expect(@gerbil1.pattern).to eq("blurry")
-      expect(@gerbil1.gender).to eq(:plain)
-    end
   end
 
   describe ".valid_color?" do
