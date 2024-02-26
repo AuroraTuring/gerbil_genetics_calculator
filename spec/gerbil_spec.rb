@@ -26,6 +26,7 @@ RSpec.describe Gerbil do
       expect(Gerbil.valid_color?("black")).to be true
       expect(Gerbil.valid_color?("aguuti")).to be false
       expect(Gerbil.valid_color?("painted")).to be false
+      expect(Gerbil.valid_color?("white")).to be false
     end
 
   end
