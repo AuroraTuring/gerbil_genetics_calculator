@@ -13,10 +13,7 @@ class Gerbil
 
   # colors must accept a space later
   def self.valid_color?(color)
-    if COLORS_LIST.include?(color)
-    else
-      Messages.invalid
-    end
+    COLORS_LIST.include?(color)
   end
 
 end
