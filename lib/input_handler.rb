@@ -1,28 +1,18 @@
 class InputHandler
 
 
+  def launch
+    puts Messages.welcome
+    mothers_input = gets.chomp
+    #Class checks that color is valid
+    Gerbil.valid_color?(mothers_input)
 
-  # def receive_input
-    # wait for user input
-    # Class checks if input is valid
-  # end
+    puts Messages.father
+    fathers_input = gets.chomp
+    #Class checks that color is valid
+    Gerbil.valid_color?(fathers_input)
 
-
-
-def launch
-  puts Messages.welcome
-  # receives mother's input
-  mothers_input = gets.chomp
-  # is mother's input valid
-
-  # check against color list
-  gerbil.valid_color?
-  # puts Messages.pattern
-  # receive father's input
-  fathers_input = gets.chomp
-  # puts Messages.possible_babies
-end
-
-
+    puts Messages.babies
+  end
 
 end
