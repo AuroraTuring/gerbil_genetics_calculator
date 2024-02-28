@@ -6,9 +6,18 @@ class Gerbil
   attr_reader :color, :pattern, :gender
 
   def initialize(color, pattern, gender)
-    @color = color
+    @color = color if validate_color?(color)
     @pattern = pattern
-    @gender = gender # fixed, male or female
+    @gender = [:male, :female]
+  end
+
+  def validate_color?(color)
+    if self.class.valid_color(color)
+      return true
+    else
+      raise "Text here."
+    end
+  rescue StandardError
   end
 
   # colors must accept a space later
