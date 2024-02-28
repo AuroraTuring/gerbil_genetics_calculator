@@ -29,6 +29,10 @@ RSpec.describe Gerbil do
       expect(Gerbil.valid_color?("white")).to be false
     end
 
+    xit "cannot create a gerbil with an invalid color" do
+      expect{Gerbil.new("painted", "sparkly", :alien)}.to raise_error("Text here.")
+    end
+
   end
 
 
