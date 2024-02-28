@@ -24,6 +24,15 @@ class InputHandler
         break
       end
     end
+
+
+    gerbil_momma = Gerbil.new(mothers_input, "mottled", :female)
+    puts gerbil_momma
+
+    gerbil_pappa = Gerbil.new(fathers_input, "base", :male)
+    puts gerbil_pappa
+
+
     puts Messages.babies
   end
 
