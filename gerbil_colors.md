@@ -204,5 +204,15 @@ Silver Point is defined more by looks than genetics, so I would leave it out.
 
 "Spotting (Sp) is a dominant gene and only requires one gene to express this trait. When the gene is homozygous or double spotted (SpSp) it is lethal in utero and absorbed without harm by the mother. This causes no apparent reduction in litter size. When breeding a spotted (Spsp) to a non-spotted (spsp) the pups will be roughly 50% spotted and 50% non-spotted. When breeding a spotted (Spsp) to a spotted (Spsp) 25% of the pups are double spotted (SpSp) and absorbed by the mother, 50% are spotted (Spsp) and 25% are non-spotted. This makes the live born pup ratio 67% spotted and 33% non-spotted."
 
-Optional Modifiers: 
-chmchm, uwuw, spsp.
+
+Differing Modifiers: 
+(Meaning it's not just X, x, or *.)
+CC, Cc(chm), Cc(h), c(chm)c(chm), c(chm)c(h), c(h)c(h).
+UwUw, Uwuw(d), and uw(d)uw(d). Do not include the lowercase uwuw mutation.
+EE, Ee, Ee(f), ee, ee(f), e(f)e(f).
+
+
+Truly Optional Modifiers: 
+Spotting: SpSp, Spsp, spsp.
+Rex: ReRe, Rere, rere.
+"Technically there is no sp, since that would be a recessive mutation at the Sp-locus. Wildtype (non-Sp) is properly written +. So SpSp (fatal), Sp+, ++ (omitted). Same with re not actually being a thing, it's also +. People use sp and re to make things easier. You can just use sp and re to make it work, nobody's going to nitpick except me lol."
