@@ -3,27 +3,31 @@ const validCharacters = ['e','u','w','(',')','f','s','p','r']
 const submitButton = document.querySelector(".submit-button")
 const genotypeEntry = document.querySelector('.genotype-entry')
 
-submitButton.addEventListener('click', function(event){
+submitButton.addEventListener('click', function(){
+    let toGenerate = Array.from(genotypeEntry.children);
+    let entry = generateEntry(toGenerate);
+    console.log(entry);
+});
+
+function generateEntry(entry){
     let toExportEntry = {
         genes : []
     };
-    let validSubmission = true
-    Array.from(genotypeEntry.children).forEach(gene => {
-        let isValidInput = validateInput(gene.value)
+    let validSubmission = true;
+    entry.forEach(gene => {
+        let isValidInput = validateInput(gene.value);
         if (!isValidInput){
-            validSubmission = false
+            validSubmission = false;
         };
-        toExportEntry.genes.push(gene.value)
+        toExportEntry.genes.push(gene.value);
     });
-    console.log(validSubmission)
     if (validSubmission){
-        console.log(toExportEntry.genes)
+        console.log(toExportEntry.genes);
     } else {
-        delete toExportEntry
-        return "error: invalid entry"
-    }
-});
-
+        delete toExportEntry;
+        return "error: invalid entry";
+    };
+};
 
 function validateInput(string){
     let validInput = true
