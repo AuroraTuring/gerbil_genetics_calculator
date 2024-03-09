@@ -3,7 +3,8 @@ const validCharacters = ['e','u','w','(',')','f','s','p','r']
 const submitButton = document.querySelector(".submit-button")
 const parent1 = document.getElementById('parent1')
 const parent2 = document.getElementById('parent2')
-const userInput = readFileSync('user_input.json');
+var fs = require('fs')
+const userInput = fs.readFileSync('user_input.json');
 const jsonData = JSON.parse(userInput)
 document.addEventListener('DOMContentLoade', function(){
 
@@ -18,7 +19,7 @@ submitButton.addEventListener('click', function(){
        //print error message
     } else {
         jsonData.parents.push
-        writeFileSync('user_input.json', JSON.stringify(jsonData))
+        fs.writeFileSync('user_input.json', JSON.stringify(jsonData))
     }
 });
 
@@ -38,7 +39,6 @@ function generateParent(parent, entry){
     if (validSubmission){
         return parentObj;
     } else {
-        delete parentObj;
         return "error";
     };
 };
