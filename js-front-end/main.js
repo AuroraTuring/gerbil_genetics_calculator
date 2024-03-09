@@ -1,14 +1,14 @@
-import { readFileSync, writeFileSync } from 'fs'
+// import { readFileSync, writeFileSync } from 'fs'
 const validCharacters = ['e','u','w','(',')','f','s','p','r']
 const submitButton = document.querySelector(".submit-button")
 const parent1 = document.getElementById('parent1')
 const parent2 = document.getElementById('parent2')
-var fs = require('fs')
-const userInput = fs.readFileSync('user_input.json');
-const jsonData = JSON.parse(userInput)
-document.addEventListener('DOMContentLoade', function(){
+// var fs = require('fs')
+// const userInput = fs.readFileSync('user_input.json');
+// const jsonData = JSON.parse(userInput)
+// document.addEventListener('DOMContentLoaded', function(){
 
-});
+// });
 submitButton.addEventListener('click', function(){
     let toGenerate = Array.from(parent1.children);
     let entry1 = generateParent('m',toGenerate);
@@ -18,8 +18,8 @@ submitButton.addEventListener('click', function(){
     if (entry1 === "error" || entry2 === "error") {
        //print error message
     } else {
-        jsonData.parents.push
-        fs.writeFileSync('user_input.json', JSON.stringify(jsonData))
+        // jsonData.parents.push
+        // fs.writeFileSync('user_input.json', JSON.stringify(jsonData))
     }
 });
 
