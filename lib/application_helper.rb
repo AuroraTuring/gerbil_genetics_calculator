@@ -1,4 +1,5 @@
 require "pry"
 require "./lib/gerbil"
 require "./lib/messages"
+require "./lib/calculator"
 require "./lib/input_handler"
