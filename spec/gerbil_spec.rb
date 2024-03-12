@@ -2,7 +2,7 @@ require "./spec/spec_helper"
 
 RSpec.describe Gerbil do
   before(:each) do
-    @gerbil1 = Gerbil.new("agouti", "base", :male)
+    @gerbil1 = Gerbil.new("agouti", "self", :male)
     @gerbil2 = Gerbil.new("lilac", "spot", :male)
     @gerbil3 = Gerbil.new("yellow fox", "pied", :female)
     @gerbil4 = Gerbil.new("grey agouti", "base", :male)
