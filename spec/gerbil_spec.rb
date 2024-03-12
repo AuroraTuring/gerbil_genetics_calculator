@@ -2,11 +2,11 @@ require "./spec/spec_helper"
 
 RSpec.describe Gerbil do
   before(:each) do
-    @gerbil1 = Gerbil.new("agouti", "self", :male)
-    @gerbil2 = Gerbil.new("lilac", "spot", :male)
+    @gerbil1 = Gerbil.new("agouti", "white belly", :male)
+    @gerbil2 = Gerbil.new("lilac", "base", :male)
     @gerbil3 = Gerbil.new("yellow fox", "pied", :female)
-    @gerbil4 = Gerbil.new("grey agouti", "base", :male)
-    @gerbil5 = Gerbil.new("black", "mottled", :female)
+    @gerbil4 = Gerbil.new("grey agouti", "white belly", :male)
+    @gerbil5 = Gerbil.new("black", "base", :female)
   end
 
   describe "#initialize" do
