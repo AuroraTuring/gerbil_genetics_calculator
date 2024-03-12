@@ -4,7 +4,7 @@ RSpec.describe Gerbil do
   before(:each) do
     @gerbil1 = Gerbil.new("agouti", "white belly", :male)
     @gerbil2 = Gerbil.new("lilac", "base", :male)
-    @gerbil3 = Gerbil.new("yellow fox", "pied", :female)
+    @gerbil3 = Gerbil.new("yellow fox", "white belly", :female)
     @gerbil4 = Gerbil.new("grey agouti", "white belly", :male)
     @gerbil5 = Gerbil.new("black", "base", :female)
   end
