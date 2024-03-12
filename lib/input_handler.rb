@@ -23,13 +23,10 @@ class InputHandler
       end
     end
 
-    gerbil_momma = Gerbil.new(mothers_input, "mottled", :female)
-    puts gerbil_momma
-
-    gerbil_pappa = Gerbil.new(fathers_input, "self", :male)
-    puts gerbil_pappa
-
-    puts Messages.babies
+    gerbil_momma = Gerbil.new(mothers_input, "base", :female)
+    gerbil_pappa = Gerbil.new(fathers_input, "white belly", :male)
+    calc1 = Calculator.new(gerbil_momma, gerbil_pappa)
+    calc1.calculate_pups
   end
 
 end
