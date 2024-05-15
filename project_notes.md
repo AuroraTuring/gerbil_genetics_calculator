@@ -15,3 +15,4 @@ User opens the program and sees one fields to input mother genetics. Next you en
 1. Field to input mother genetics. 
 2. Field to input father genetics. 
 3. Populate a list of possible baby colors.
+4. Set up backend to accept API calls.
